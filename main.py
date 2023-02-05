@@ -10,7 +10,7 @@ print(os.getenv("OPENAI_API_KEY"))
 
 def get_answer(phrase):
   prompt=f"""
-  Please translate the following phrase into the corporate jargon of a McKinsey consultant: {phrase}
+  Please translate the following phrase into the corporate jargon: {phrase}
   """
 
   completion = openai.Completion.create(
