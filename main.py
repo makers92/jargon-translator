@@ -32,4 +32,4 @@ def get_answer(phrase):
 @app.get("/corporateJargon/{phrase}")
 async def translate_phrase(phrase):
     return {"translation": get_answer(phrase)}
-#Returns our get_answer function to FastAPI
+#returns our get_answer function to FastAPI
